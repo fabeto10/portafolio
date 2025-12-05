@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco Vidal | Full Stack Developer & AI Specialist</title>
+    <meta name="description"
+        content="Portafolio de Francisco Alberto Vidal Devis - Desarrollador Full Stack especializado en microservicios, fintech e integración de IA">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Particle Background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span class="logo-text">&lt;FV /&gt;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+            <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+            <li><a href="#habilidades" class="nav-link">Skills</a></li>
+            <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <button class="mobile-menu-btn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Disponible para proyectos</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="greeting">Hola, soy</span>
+                <span class="name">Francisco <span class="highlight">Vidal</span></span>
+            </h1>
+            <div class="hero-subtitle">
+                <span class="typing-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">
+                Desarrollador Full Stack especializado en <strong>arquitectura de microservicios</strong>,
+                soluciones <strong>Fintech</strong> e integración de <strong>Inteligencia Artificial</strong>
+                para automatización de procesos empresariales.
+            </p>
+            <div class="hero-cta">
+                <a href="#proyectos" class="btn btn-primary">
+                    <span>Ver Proyectos</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#contacto" class="btn btn-secondary">
+                    <span>Contactar</span>
+                </a>
+                <a href="cv_francisco_final.pdf" download="CV_Francisco_Vidal.pdf" class="btn btn-download">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    <span>Descargar CV</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Proyectos Activos</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-label">Años de Experiencia</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="10">0</span>
+                    <span class="stat-label">Tecnologías</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="window-header">
+                    <div class="window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="window-title">francisco.js</span>
+                </div>
+                <pre class="code-content"><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">"Francisco Vidal"</span>,
+  <span class="property">role</span>: <span class="string">"Full Stack Developer"</span>,
+  <span class="property">skills</span>: [
+    <span class="string">"NestJS"</span>, <span class="string">"Vue 3"</span>, <span class="string">"React"</span>,
+    <span class="string">"Microservices"</span>, <span class="string">"AI/ML"</span>
+  ],
+  <span class="property">passion</span>: <span class="string">"Building the future"</span>,
+  <span class="method">code</span>: () => <span class="string">"🚀"</span>
+};</code></pre>
+            </div>
+            <div class="floating-icons">
+                <div class="float-icon" style="--delay: 0s; --x: 10%; --y: 20%;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue">
+                </div>
+                <div class="float-icon" style="--delay: 0.5s; --x: 80%; --y: 15%;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                </div>
+                <div class="float-icon" style="--delay: 1s; --x: 5%; --y: 70%;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="Node.js">
+                </div>
+                <div class="float-icon" style="--delay: 1.5s; --x: 85%; --y: 75%;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                        alt="PostgreSQL">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll para explorar</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="about">
+        <div class="section-header">
+            <span class="section-tag">&lt;sobre-mí&gt;</span>
+            <h2 class="section-title">Perfil Profesional</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p class="lead">
+                    Desarrollador Full Stack y <strong>Técnico en Informática</strong> con sólida experiencia en
+                    arquitecturas escalables, sistemas de microservicios y soluciones Fintech.
+                </p>
+                <p>
+                    Especializado en la integración de <span class="highlight-text">Inteligencia Artificial</span>
+                    para la automatización de procesos de negocio complejos. Experto en el ciclo de vida
+                    completo del desarrollo (SDLC), desde el diseño de bases de datos relacionales y
+                    APIs robustas hasta interfaces de usuario modernas.
+                </p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <div class="highlight-content">
+                            <h4>Arquitectura Escalable</h4>
+                            <p>Diseño de sistemas distribuidos con microservicios</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 6v6l4 2" />
+                            </svg>
+                        </div>
+                        <div class="highlight-content">
+                            <h4>Tiempo Real</h4>
+                            <p>Aplicaciones con WebSockets y gRPC</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                            </svg>
+                        </div>
+                        <div class="highlight-content">
+                            <h4>Integración IA</h4>
+                            <p>OpenAI, Gemini y automatización inteligente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-card">
+                <div class="card-glow"></div>
+                <div class="education-section">
+                    <h3>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                        </svg>
+                        Formación
+                    </h3>
+                    <div class="edu-item">
+                        <span class="edu-badge">2022</span>
+                        <div class="edu-info">
+                            <h4>Desarrollador Web Full Stack</h4>
+                            <p>4Geeks Academy</p>
+                            <a href="https://certificate.4geeks.com/76deeda8034a83246954b83815451106ee74d5a4"
+                                target="_blank" class="cert-link">
+                                Ver Certificado
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <span class="edu-badge current">En curso</span>
+                        <div class="edu-info">
+                            <h4>Técnico en Informática</h4>
+                            <p>Actualmente estudiando</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="habilidades" class="skills">
+        <div class="section-header">
+            <span class="section-tag">&lt;habilidades&gt;</span>
+            <h2 class="section-title">Stack Tecnológico</h2>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category" data-aos="fade-up">
+                <div class="category-header">
+                    <div class="category-icon backend">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                        </svg>
+                    </div>
+                    <h3>Backend & Arquitectura</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">NestJS</span>
+                    <span class="skill-tag">Fastify</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Microservicios</span>
+                    <span class="skill-tag">gRPC</span>
+                    <span class="skill-tag">RabbitMQ</span>
+                    <span class="skill-tag">Python</span>
+                </div>
+            </div>
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                <div class="category-header">
+                    <div class="category-icon frontend">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                            <polyline points="2 17 12 22 22 17" />
+                            <polyline points="2 12 12 17 22 12" />
+                        </svg>
+                    </div>
+                    <h3>Frontend</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Vue 3</span>
+                    <span class="skill-tag">Vuetify</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Material UI</span>
+                    <span class="skill-tag">SvelteKit</span>
+                    <span class="skill-tag">Angular</span>
+                    <span class="skill-tag">PWA</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                </div>
+            </div>
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                <div class="category-header">
+                    <div class="category-icon database">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3" />
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                        </svg>
+                    </div>
+                    <h3>Base de Datos & Cloud</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">SQLite</span>
+                    <span class="skill-tag">Redis</span>
+                    <span class="skill-tag">TypeORM</span>
+                    <span class="skill-tag">Prisma</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Nginx</span>
+                </div>
+            </div>
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                <div class="category-header">
+                    <div class="category-icon ai">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2z" />
+                            <path d="M12 8v8" />
+                            <path d="M8 12h8" />
+                        </svg>
+                    </div>
+                    <h3>IA & Herramientas</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">OpenAI API</span>
+                    <span class="skill-tag">Google Gemini</span>
+                    <span class="skill-tag">Automatización ETL</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Linux</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="projects">
+        <div class="section-header">
+            <span class="section-tag">&lt;proyectos&gt;</span>
+            <h2 class="section-title">Proyectos Destacados</h2>
+        </div>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card featured" data-aos="fade-up">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <a href="https://arbitrajeusdves.lat" target="_blank" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Visitar
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-visual fintech">
+                        <div class="visual-grid">
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                        </div>
+                        <div class="visual-circle"></div>
+                        <span class="visual-label">FINTECH</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="project-status production">En Producción</span>
+                    </div>
+                    <h3 class="project-title">Arbitraje USD/VES</h3>
+                    <p class="project-description">
+                        Sistema Fintech PWA completo para gestión de operaciones de arbitraje de divisas
+                        con cálculo de márgenes en tiempo real.
+                    </p>
+                    <ul class="project-features">
+                        <li>Algoritmos de cálculo financiero en tiempo real</li>
+                        <li>Gestión de grupos de trabajo colaborativos</li>
+                        <li>Seguimiento de transacciones multi-usuario</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>PWA</span>
+                        <span>Fintech</span>
+                        <span>Real-time</span>
+                        <span>Full Stack</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <span class="coming-soon">Próximamente</span>
+                        </div>
+                    </div>
+                    <div class="project-visual microservices">
+                        <div class="service-nodes">
+                            <div class="node"></div>
+                            <div class="node"></div>
+                            <div class="node"></div>
+                            <div class="connections">
+                                <div class="connection"></div>
+                                <div class="connection"></div>
+                            </div>
+                        </div>
+                        <span class="visual-label">MICROSERVICES</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="project-status development">En Desarrollo</span>
+                    </div>
+                    <h3 class="project-title">Zooruleta App</h3>
+                    <p class="project-description">
+                        Arquitectura de microservicios con NestJS para sistema de lotería con 3 portales distintos.
+                    </p>
+                    <ul class="project-features">
+                        <li>Comunicación via gRPC y RabbitMQ</li>
+                        <li>Motor de riesgo y gestión financiera</li>
+                        <li>Multi-portal con Vue 3 + Vuetify</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>NestJS</span>
+                        <span>gRPC</span>
+                        <span>Redis</span>
+                        <span>Vue 3</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <span class="coming-soon">MVP</span>
+                        </div>
+                    </div>
+                    <div class="project-visual ai-project">
+                        <div class="ai-brain">
+                            <div class="brain-pulse"></div>
+                            <div class="brain-core"></div>
+                        </div>
+                        <span class="visual-label">AI POWERED</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="project-status development">MVP</span>
+                    </div>
+                    <h3 class="project-title">LANDI - Sistema de Importaciones</h3>
+                    <p class="project-description">
+                        Plataforma con IA para extracción automática de datos y cálculo de costos de importación.
+                    </p>
+                    <ul class="project-features">
+                        <li>Extracción de datos con OpenAI API</li>
+                        <li>Cálculo de Landed Cost automatizado</li>
+                        <li>Procesamiento masivo de documentos</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>OpenAI</span>
+                        <span>NestJS</span>
+                        <span>React</span>
+                        <span>Automatización</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <a href="https://sutradeviseditores.com" target="_blank" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Visitar
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-visual ecommerce">
+                        <div class="cart-icon">
+                            <div class="cart-body"></div>
+                            <div class="cart-wheel"></div>
+                            <div class="cart-wheel"></div>
+                        </div>
+                        <span class="visual-label">E-COMMERCE</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="project-status development">En Desarrollo</span>
+                    </div>
+                    <h3 class="project-title">Sutra Devis Editores</h3>
+                    <p class="project-description">
+                        E-commerce bimonetario con precios sincronizados BCV/Paralelo y pagos multi-pasarela.
+                    </p>
+                    <ul class="project-features">
+                        <li>Sistema dual USD/VES automatizado</li>
+                        <li>Backend Fastify de alto rendimiento</li>
+                        <li>Gestión de carga masiva Excel</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>SvelteKit</span>
+                        <span>Fastify</span>
+                        <span>Prisma</span>
+                        <span>Bimonetario</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="project-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <a href="https://vortix.digital" target="_blank" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Visitar
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-visual cms">
+                        <div class="content-blocks">
+                            <div class="block"></div>
+                            <div class="block"></div>
+                            <div class="block"></div>
+                        </div>
+                        <span class="visual-label">AI CMS</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="project-status preview">Preview</span>
+                    </div>
+                    <h3 class="project-title">Vortix Digital</h3>
+                    <p class="project-description">
+                        CMS impulsado por IA para generación automática de contenido viral con LLM.
+                    </p>
+                    <ul class="project-features">
+                        <li>Redacción automática con Google Gemini</li>
+                        <li>Integración con APIs de noticias</li>
+                        <li>Panel de gestión de contenido</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Gemini API</span>
+                        <span>CMS</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="section-header">
+            <span class="section-tag">&lt;contacto&gt;</span>
+            <h2 class="section-title">¿Trabajamos Juntos?</h2>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <p class="contact-lead">
+                    Estoy disponible para proyectos freelance, colaboraciones o
+                    oportunidades de trabajo a tiempo completo.
+                </p>
+                <div class="contact-methods">
+                    <a href="https://wa.me/584123732453" target="_blank" class="contact-method">
+                        <div class="method-icon whatsapp">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                        </div>
+                        <div class="method-info">
+                            <span class="method-label">WhatsApp</span>
+                            <span class="method-value">+58 412 373 24 53</span>
+                        </div>
+                    </a>
+                    <a href="mailto:f0414475@gmail.com" class="contact-method">
+                        <div class="method-icon email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div class="method-info">
+                            <span class="method-label">Email</span>
+                            <span class="method-value">f0414475@gmail.com</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/Francisco_Vidal" target="_blank" class="social-link linkedin"
+                        aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/fabeto10" target="_blank" class="social-link github"
+                        aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="https://gitlab.com/fabeto10" target="_blank" class="social-link gitlab"
+                        aria-label="GitLab">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-decoration">
+                <div class="decoration-circle"></div>
+                <div class="decoration-lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Francisco Vidal. Diseñado con 💜 y mucho ☕</p>
+            <p class="footer-tagline">Construyendo el futuro, una línea de código a la vez.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

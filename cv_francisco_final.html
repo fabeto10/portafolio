@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Francisco Alberto Vidal Devis</title>
     <style>
         :root {
-            --primary-color: #0f172a; /* Slate 900 */
-            --accent-color: #0369a1;  /* Sky 700 */
-            --text-color: #334155;    /* Slate 700 */
+            --primary-color: #0f172a;
+            /* Slate 900 */
+            --accent-color: #0369a1;
+            /* Sky 700 */
+            --text-color: #334155;
+            /* Slate 700 */
             --bg-color: #ffffff;
             --tag-bg: #f1f5f9;
         }
+
         body {
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
             line-height: 1.5;
@@ -21,15 +26,24 @@
             padding: 40px;
             background-color: var(--bg-color);
         }
-        a { color: var(--accent-color); text-decoration: none; font-weight: 500; }
-        a:hover { text-decoration: underline; }
-        
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         /* Header */
         header {
             border-bottom: 2px solid var(--primary-color);
             padding-bottom: 25px;
             margin-bottom: 30px;
         }
+
         h1 {
             margin: 0;
             color: var(--primary-color);
@@ -37,13 +51,14 @@
             text-transform: uppercase;
             letter-spacing: -0.5px;
         }
+
         .subtitle {
             font-size: 1.1rem;
             color: #64748b;
             margin-top: 5px;
             font-weight: 500;
         }
-        
+
         /* Contact Info */
         .contact-bar {
             margin-top: 15px;
@@ -52,14 +67,18 @@
             gap: 15px;
             font-size: 0.9rem;
         }
+
         .contact-item {
             display: flex;
             align-items: center;
             gap: 6px;
         }
-        
+
         /* Sections */
-        section { margin-bottom: 30px; }
+        section {
+            margin-bottom: 30px;
+        }
+
         h2 {
             color: var(--primary-color);
             font-size: 1.25rem;
@@ -75,17 +94,20 @@
             margin-bottom: 25px;
             page-break-inside: avoid;
         }
+
         .project-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             margin-bottom: 5px;
         }
+
         .project-title {
             font-weight: 700;
             font-size: 1.1rem;
             color: var(--primary-color);
         }
+
         .project-status {
             font-size: 0.75rem;
             padding: 2px 8px;
@@ -93,8 +115,16 @@
             font-weight: 600;
             text-transform: uppercase;
         }
-        .status-prod { background-color: #dcfce7; color: #166534; }
-        .status-dev { background-color: #fff7ed; color: #9a3412; }
+
+        .status-prod {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+
+        .status-dev {
+            background-color: #fff7ed;
+            color: #9a3412;
+        }
 
         .tech-tags {
             font-size: 0.85rem;
@@ -105,14 +135,23 @@
             flex-wrap: wrap;
             gap: 8px;
         }
+
         .tech-tag {
             background: var(--tag-bg);
             padding: 2px 6px;
             border-radius: 4px;
         }
 
-        ul { margin: 5px 0 0 0; padding-left: 18px; }
-        li { margin-bottom: 5px; font-size: 0.95rem; text-align: justify; }
+        ul {
+            margin: 5px 0 0 0;
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+            text-align: justify;
+        }
 
         /* Skills */
         .skills-grid {
@@ -120,35 +159,71 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }
-        .skill-category strong { display: block; color: var(--primary-color); margin-bottom: 4px; }
-        .skill-category span { font-size: 0.9rem; display: block; }
+
+        .skill-category strong {
+            display: block;
+            color: var(--primary-color);
+            margin-bottom: 4px;
+        }
+
+        .skill-category span {
+            font-size: 0.9rem;
+            display: block;
+        }
 
         /* Education */
-        .edu-item { margin-bottom: 15px; }
-        .edu-title { font-weight: 700; color: var(--primary-color); }
-        .edu-school { font-style: italic; font-size: 0.95rem; }
-        .cert-link { font-size: 0.85rem; margin-left: 5px; font-weight: normal; }
+        .edu-item {
+            margin-bottom: 15px;
+        }
+
+        .edu-title {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .edu-school {
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+
+        .cert-link {
+            font-size: 0.85rem;
+            margin-left: 5px;
+            font-weight: normal;
+        }
 
         /* Print specifics */
         @media print {
-            body { padding: 0; max-width: 100%; }
-            a { text-decoration: none; color: #000; }
-            .no-print { display: none; }
+            body {
+                padding: 0;
+                max-width: 100%;
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+
+            .no-print {
+                display: none;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <header>
         <h1>Francisco Alberto Vidal Devis</h1>
         <div class="subtitle">Desarrollador Full Stack | Arquitectura de Microservicios & IA</div>
-        
+
         <div class="contact-bar">
             <div class="contact-item">
                 📱 <a href="https://wa.me/584123732453" target="_blank">+58 412 373 24 53 (WhatsApp)</a>
             </div>
             <div class="contact-item">📧 f0414475@gmail.com</div>
-            <div class="contact-item">🔗 <a href="https://linkedin.com/in/Francisco_Vidal" target="_blank">LinkedIn</a></div>
+            <div class="contact-item">🔗 <a href="https://www.linkedin.com/in/francisco-alberto-vidal-devis-2a1554211/"
+                    target="_blank">LinkedIn</a></div>
             <div class="contact-item">🐙 <a href="https://github.com/fabeto10" target="_blank">GitHub</a></div>
             <div class="contact-item">🦊 <a href="https://gitlab.com/fabeto10" target="_blank">GitLab</a></div>
         </div>
@@ -157,7 +232,11 @@
     <section>
         <h2>Perfil Profesional</h2>
         <p>
-            Desarrollador Full Stack y Técnico en Informática (en formación) con sólida experiencia en arquitecturas escalables, sistemas de microservicios y soluciones Fintech. Especializado en la integración de Inteligencia Artificial para la automatización de procesos de negocio complejos. Experto en el ciclo de vida completo del desarrollo (SDLC), desde el diseño de bases de datos relacionales y APIs robustas (NestJS, Fastify) hasta interfaces de usuario modernas (Vue 3, React, SvelteKit).
+            Desarrollador Full Stack y Técnico en Informática (en formación) con sólida experiencia en arquitecturas
+            escalables, sistemas de microservicios y soluciones Fintech. Especializado en la integración de Inteligencia
+            Artificial para la automatización de procesos de negocio complejos. Experto en el ciclo de vida completo del
+            desarrollo (SDLC), desde el diseño de bases de datos relacionales y APIs robustas (NestJS, Fastify) hasta
+            interfaces de usuario modernas (Vue 3, React, SvelteKit).
         </p>
     </section>
 
@@ -188,7 +267,8 @@
 
         <div class="project-card">
             <div class="project-header">
-                <span class="project-title">ARBITRAJE USD/VES <a href="https://arbitrajeusdves.lat" target="_blank">[Web]</a></span>
+                <span class="project-title">ARBITRAJE USD/VES <a href="https://arbitrajeusdves.lat"
+                        target="_blank">[Web]</a></span>
                 <span class="project-status status-prod">En Producción</span>
             </div>
             <div class="tech-tags">
@@ -198,9 +278,12 @@
                 <span class="tech-tag">Full Stack</span>
             </div>
             <ul>
-                <li><strong>Sistema Fintech PWA:</strong> Desarrollo de una Aplicación Web Progresiva completa para la gestión de operaciones de arbitraje de divisas.</li>
-                <li><strong>Lógica Financiera:</strong> Implementación de algoritmos críticos para el cálculo de márgenes de ganancia y tasas de cambio en tiempo real.</li>
-                <li><strong>Gestión Colaborativa:</strong> Módulos para la administración de grupos de trabajo y seguimiento de transacciones.</li>
+                <li><strong>Sistema Fintech PWA:</strong> Desarrollo de una Aplicación Web Progresiva completa para la
+                    gestión de operaciones de arbitraje de divisas.</li>
+                <li><strong>Lógica Financiera:</strong> Implementación de algoritmos críticos para el cálculo de
+                    márgenes de ganancia y tasas de cambio en tiempo real.</li>
+                <li><strong>Gestión Colaborativa:</strong> Módulos para la administración de grupos de trabajo y
+                    seguimiento de transacciones.</li>
             </ul>
         </div>
 
@@ -217,9 +300,14 @@
                 <span class="tech-tag">PostgreSQL</span>
             </div>
             <ul>
-                <li><strong>Arquitectura de Microservicios:</strong> Diseño e implementación de un sistema distribuido utilizando <strong>NestJS</strong> y comunicación eficiente vía <strong>gRPC</strong> y RabbitMQ.</li>
-                <li><strong>Motor de Riesgo y Juego:</strong> Desarrollo de lógica de negocio compleja para lotería, incluyendo validación de apuestas en tiempo real y cálculo de exposición financiera (Risk Management).</li>
-                <li><strong>Ecosistema Multi-portal:</strong> Construcción de tres frontends distintos (Agencias, Recaudadores, SuperAdmin) utilizando <strong>Vue 3 y Vuetify</strong>.</li>
+                <li><strong>Arquitectura de Microservicios:</strong> Diseño e implementación de un sistema distribuido
+                    utilizando <strong>NestJS</strong> y comunicación eficiente vía <strong>gRPC</strong> y RabbitMQ.
+                </li>
+                <li><strong>Motor de Riesgo y Juego:</strong> Desarrollo de lógica de negocio compleja para lotería,
+                    incluyendo validación de apuestas en tiempo real y cálculo de exposición financiera (Risk
+                    Management).</li>
+                <li><strong>Ecosistema Multi-portal:</strong> Construcción de tres frontends distintos (Agencias,
+                    Recaudadores, SuperAdmin) utilizando <strong>Vue 3 y Vuetify</strong>.</li>
             </ul>
         </div>
 
@@ -235,15 +323,19 @@
                 <span class="tech-tag">Automatización</span>
             </div>
             <ul>
-                <li><strong>Integración de IA:</strong> Implementación de <strong>OpenAI API</strong> para la extracción de datos estructurados (JSON) desde documentos complejos (PDF, Excel).</li>
-                <li><strong>Cálculo Logístico (Landed Cost):</strong> Desarrollo del motor de cálculo para costos aduanales, impuestos y márgenes de importación.</li>
-                <li><strong>Ingesta de Datos:</strong> Sistema robusto para detección de proveedores y procesamiento masivo de archivos.</li>
+                <li><strong>Integración de IA:</strong> Implementación de <strong>OpenAI API</strong> para la extracción
+                    de datos estructurados (JSON) desde documentos complejos (PDF, Excel).</li>
+                <li><strong>Cálculo Logístico (Landed Cost):</strong> Desarrollo del motor de cálculo para costos
+                    aduanales, impuestos y márgenes de importación.</li>
+                <li><strong>Ingesta de Datos:</strong> Sistema robusto para detección de proveedores y procesamiento
+                    masivo de archivos.</li>
             </ul>
         </div>
 
         <div class="project-card">
             <div class="project-header">
-                <span class="project-title">SUTRA DEVIS EDITORES <a href="https://sutradeviseditores.com" target="_blank">[Web]</a></span>
+                <span class="project-title">SUTRA DEVIS EDITORES <a href="https://sutradeviseditores.com"
+                        target="_blank">[Web]</a></span>
                 <span class="project-status status-dev">En Desarrollo</span>
             </div>
             <div class="tech-tags">
@@ -253,14 +345,17 @@
                 <span class="tech-tag">Bimonetario</span>
             </div>
             <ul>
-                <li>Desarrollo de E-commerce con sistema de precios dual (USD/VES) sincronizado con tasas BCV/Paralelo.</li>
-                <li>Backend de alto rendimiento con Fastify, gestión de carga masiva (Excel) y pagos multi-pasarela.</li>
+                <li>Desarrollo de E-commerce con sistema de precios dual (USD/VES) sincronizado con tasas BCV/Paralelo.
+                </li>
+                <li>Backend de alto rendimiento con Fastify, gestión de carga masiva (Excel) y pagos multi-pasarela.
+                </li>
             </ul>
         </div>
 
         <div class="project-card">
             <div class="project-header">
-                <span class="project-title">VORTIX DIGITAL <a href="https://vortix.digital" target="_blank">[Web]</a></span>
+                <span class="project-title">VORTIX DIGITAL <a href="https://vortix.digital"
+                        target="_blank">[Web]</a></span>
                 <span class="project-status status-dev">Preview</span>
             </div>
             <div class="tech-tags">
@@ -269,7 +364,8 @@
                 <span class="tech-tag">CMS</span>
             </div>
             <ul>
-                <li>CMS impulsado por IA para redacción automática de contenido viral utilizando modelos LLM y APIs de noticias.</li>
+                <li>CMS impulsado por IA para redacción automática de contenido viral utilizando modelos LLM y APIs de
+                    noticias.</li>
             </ul>
         </div>
 
@@ -280,7 +376,8 @@
         <div class="edu-item">
             <div class="edu-title">
                 Desarrollador Web Full Stack
-                <a href="https://certificate.4geeks.com/76deeda8034a83246954b83815451106ee74d5a4" target="_blank" class="cert-link">[Ver Certificado Oficial]</a>
+                <a href="https://certificate.4geeks.com/76deeda8034a83246954b83815451106ee74d5a4" target="_blank"
+                    class="cert-link">[Ver Certificado Oficial]</a>
             </div>
             <div class="edu-school">4Geeks Academy (2022)</div>
         </div>
@@ -291,4 +388,5 @@
     </section>
 
 </body>
+
 </html>
